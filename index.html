@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>JNCF 2017 — OpenDreamKit presentation</title>
+
+    <meta name="author" content="Luca De Feo" />
+
+    <meta name="description"
+	  content="OpenDreamKit – The EU is actually paying to develop open source CAS's!" />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="http://opendreamkit.org/reveal.js/css/reveal.css"/>
+    <link rel="stylesheet" href="http://opendreamkit.org/reveal.js/css/theme/white.css" id="theme"/>
+    <style>
+    .reveal .slides {
+        text-align: left;
+    }
+    .reveal .slides section>* {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .reveal h1 { font-size: 2em; text-transform: none}
+    .reveal h2 { font-size: 1.5em; text-transform: none}
+    .reveal h3 { font-size: 1em; text-transform: none}
+    .reveal blockquote { font-style: normal; width: initial; }
+    
+    .reveal section img { border: none; box-shadow: none; }
+    .reveal img[alt="logo"] { width: 30%; margin: 1em; }
+    .reveal img[alt="dream"] { margin: 1em; width: 800px; }
+    .reveal img[alt="twitter"] { vertical-align: bottom; }
+    #odk-logos { width: 580px; height: 500px; overflow: hidden; display: block; margin: 1em auto; transform-origin: top; }
+    #thebe { width: 100%; min-height: 500px; }
+    .slides > section:first-child { text-align: center; }
+    </style>
+  </head>
+
+  <body>
+    <div class="reveal">
+      <div class="slides">
+	<section data-markdown data-separator="^---\n" data-separator-vertical="^--\n">
+<script type="text/template">
+![logo](http://opendreamkit.org/public/logos/odk-elected-logo.svg)
+
+### The EU is actually paying to develop open source CAS's!
+
+<small>View these slides at <a id="url"></a></small>
+
+---
+
+# Who?
+
+### <http://opendreamkit.org/>
+
+- EU H2020 project, call on *Virtual Research Environments*.
+- Budget: **7.6M€**.
+- **4 years**: Sep 2015 – Aug 2019.
+- [15 sites, 50 participants](http://opendreamkit.org/partners/).
+- 7 *work pacakges*, 828 *person-months*.
+- [168 (and counting) GitHub issues](https://github.com/OpenDreamKit/OpenDreamKit/issues), [57 *tasks*](https://github.com/OpenDreamKit/OpenDreamKit/issues?utf8=%E2%9C%93&q=is%3Aopen%20is%3Aissue%20%20label%3Atask%20), [85 *deliverables*](https://github.com/OpenDreamKit/OpenDreamKit/issues?q=is%3Aopen+is%3Aissue+label%3Adeliverable).
+- 4 CAS's, 1 scientific notebook system, *uncountable* software packages!
+
+--
+
+## 15 sites, 50 participants
+
+<iframe id="odk-logos" scrolling="no" src="http://opendreamkit.org/partners/#logos"></iframe>
+
+--
+
+## 100% developers, 100% open source
+
+- GAP (St Andrews, Oxford)
+- Linbox (Grenoble)
+- PARI/GP (Bordeaux, Versailles)
+- SageMath (Bordeaux, Grenoble, Paris Sud, Oxford, Versailles)
+- Singular, MPIR (Kaiserslautern)
+- LMFDB (Warwick, Zürich)
+- MathHub, MMT/OpenMath (Bremen)
+- Jupyter (Simula)
+- Scientific Python (SouthHampton, Sheffield, Silesia)
+- ...
+
+---
+
+# What?
+
+> **Virtual Research Environment (VRE)**  
+> <small>*noun, n., (newspeak)*</small>  
+> Groups of researchers, typically widely dispersed who are working
+> together through ubiquitous, trusted and easy access to services for
+> scientific data, computing, and networking, in a collaborative virtual
+> environment.
+
+**Translation:** Research + Cloud.
+
+--
+
+## So, what do you REALLY do?
+
+- Building **just one** VRE is **BORING!**
+
+- We are not the next [CNRS cloud](https://mycore.core-cloud.net/)!</small>
+
+&nbsp;
+
+## We are building a *math VRE TOOLKIT*!
+
+- Entirely based on open source components!
+
+
+
+--
+
+## *Mix'n'match* components
+
+- Collaborative workspaces (JupyterHub, SageMathCloud)
+- User interfaces (Jupyter notebook)
+- Computational components (Linbox, PARI/GP, GAP, SageMath, Singular, ...)
+- Data / knowledge bases (LMFDB, MathHub, ...)
+- Physical resources (Cloud infrastructure, ...)
+
+--
+
+## Scale to ANY environment
+
+- Personal laptop;
+- Your team's server;
+- Your University cloud;
+- A European grid infrastructure.
+
+---
+
+# How?
+
+<h2 style="text-align:center;margin-top:3em">Open·Dream·Kit</h2>
+
+--
+
+## Open
+
+Open source, of course, but also:
+
+- [Open application process](https://github.com/OpenDreamKit/OpenDreamKit/blob/master/Proposal/proposal-www.pdf);
+- [Open progress tracking](https://github.com/OpenDreamKit/OpenDreamKit);
+- Open research (open access, open data).
+
+--
+
+## Dream
+
+![dream](http://i.imgur.com/pK1Gn.gif)
+
+--
+
+## Kit
+
+- **Mathematical libraries**;
+
+- **Computer Algebra Software:** [GAP](http://www.gap-system.org/),
+[PARI/gp](http://pari.math.u-bordeaux.fr/),
+[SageMath](http://sagemath.org/),
+[Singular](https://www.singular.uni-kl.de/);
+
+- **Knowledge bases:** [MathHub](https://mathhub.info/) active
+mathematical documents and *flexiformal* mathematics.
+
+- [**Jupyter notebook:**](http://jupyter.org/) a browser-based,
+interactive, system-agnostic notebook;
+
+- **VREs:** [JupyterHub](https://github.com/jupyterhub/jupyterhub),
+[JupyterLab](https://github.com/jupyterlab/jupyterlab),
+[SageMathCloud](http://cloud.sagemath.com/), ...
+
+---
+
+# Demos
+
+## Jupyter
+
+- Try it yourself at <http://tmpnb.org/>!
+
+- Or
+  
+  ```
+  sudo apt-get install jupyter
+  jupyter notebook
+  ```
+
+- Or, if you have SageMath 7.x,
+  
+  ```
+  sage -n jupyter
+  ```
+
+- Or in [SageMathCloud](http://cloud.sagemath.com/) (commercial
+service, classroom tools, freemium).
+
+--
+
+## JupyterHub
+
+- User accounts + Jupyter.
+
+- Simple yet effective VRE.
+
+- Still experimental, [read the docs!](https://jupyterhub.readthedocs.io/)
+
+- Next evolution:
+[JupyterLab](http://blog.jupyter.org/2016/07/14/jupyter-lab-alpha/)
+full featured cloud system.
+
+--
+
+## More than just a notebook!
+<iframe id="thebe" src="http://localhost:8000/"></iframe>
+
+*powered by [thebe.js](https://github.com/oreillymedia/thebe)
+
+--
+
+## Knowledge bases
+
+- [Syntactic search on Zentralblatt](https://zbmath.org/formulae/);
+
+- Next evolution: *semantic search*, *active documents*.
+
+--
+
+## Coming soon
+
+- A lot more plumbery...
+
+- SageMath on Windows! [test it!](https://github.com/embray/sage-windows/releases/)
+
+- `apt-get install sagemath` !!!
+
+- ...
+
+---
+
+# Follow us!
+
+## <http://opendreamkit.org/>
+
+## [![twitter](http://opendreamkit.org/public/twitter.png) @opendreamkit](https://twitter.com/opendreamkit)
+
+## We are [hiring](http://opendreamkit.org/joinus/)!
+
+
+</script>
+	</section>
+      </div>
+    </div>
+    
+    <script src="http://opendreamkit.org/reveal.js/lib/js/head.min.js"></script>
+    <script src="http://opendreamkit.org/reveal.js/js/reveal.js"></script>
+    <script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: false,
+        center: false,
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+        transitionSpeed: 'fast',
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'http://opendreamkit.org/reveal.js/plugin/markdown/marked.js' },
+          { src: 'http://opendreamkit.org/reveal.js/plugin/markdown/markdown.js' },
+        ]
+      });
+    </script>
+    <script>
+      Reveal.addEventListener( 'ready', function(event) {
+      document.getElementById('url').textContent = window.location;
+      document.getElementById('odk-logos').style.transform = 'scale(' + (0.00172 * Reveal.getConfig().height ) + ')';
+      });
+    </script>
+  </body>
+</html>
